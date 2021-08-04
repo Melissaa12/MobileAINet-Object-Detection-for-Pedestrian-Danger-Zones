@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Images</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <style>
+        body{
+            background-image: url("https://media.giphy.com/media/7VzgMsB6FLCilwS30v/giphy.gif");
+            background-color: #cccccc;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+ <p><h1 align="center" style="color:white;">Object Detection</h1></p>
+ <div class="container">
+    <div class = "wrapper">
+        <div class = "row">
+            <h2 style="color:white;">select file to upload</h2>
+            
+            <p></p>
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <ul>
+                            {% for message in messages %}
+                                <li>{{message}}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% endwith %}
+            </p>
+            {% if filename %}
+            <div style="padding:20px;">
+                <img src="{{ url_for('display_image',filename = filename)}}">
+            </div>
+            {% endif %}
+ 
+        </div>
+    </div>
+    <form method="post" action="/" enctype="multipart/form-data">
+        <dl>
+            <p>
+                <input type = "file" name = "file" class ="form-control" autocomplete="off" required>
+            </p>
+        </dl>
+        <p>
+            <input type="submit" value = "submit" class="btn btn-info">
+        </p>
+    </form>
+    <form method="post" action="/predict">
+
+        <input type="submit" value="Predict" name="Predict"/>
+
+</form>
+ </div>
+</body>
+</html>
