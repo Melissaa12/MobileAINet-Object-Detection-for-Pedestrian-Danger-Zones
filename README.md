@@ -7,6 +7,8 @@ In preprocessing folder, there are scripts that preps the data for training
 This script will split the video into frames and save them every 10 frames
 - preprocessing_utils.py:
 This script contains miscellaneous parts of codes that were used for different uses such as splitting the images into datasets and shifting of images into different folders
+- augmentation.ipynb:
+This notebook contains the scripts for augmentation (noising, blurring and rotation)
 
 ## Model
 This folder is containing scripts edited from Ultralytics repo and data generated from it. Run YOLOv5_Code_final.ipynb to see usages of the code repo like traning and evaluation on models.
