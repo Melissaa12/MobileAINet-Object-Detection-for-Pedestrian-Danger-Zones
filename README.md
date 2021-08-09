@@ -50,3 +50,5 @@ config file stating default initial hyperparameters values using Adam optimiser
 
 Note: Dataset is not provided in repo, for example dataset can look at this link https://drive.google.com/drive/folders/1ZCeKRX5lIT3uJJV7YViME_I0zZd0nfwS?usp=sharing for dataset with augmented images
 
+### GUI
+A Graphical User Interface (GUI) was built for our object detection model to facilitate users in applying the developed model to their own dataset. Simply clone this repository and run app.py. Input images that are too different from our training may not perform as well, as discussed in our report. As such, users can download the images from the images folder which includes images taken around SUTD to test for a better prediction output.
