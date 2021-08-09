@@ -11,37 +11,37 @@ This script contains miscellaneous parts of codes that were used for different u
 ## Model
 This folder is containing scripts edited from Ultralytics repo and data generated from it. Run YOLOv5_Code_final.ipynb to see usages of the code repo like traning and evaluation on models.
 
-This read me includes the important parts of the repositary that we edited or is relevant
+This read me includes the important parts of the repository that we edited or is relevant
 
-- test.py
+- test.py:
 script to run evaluation for model on dataset
-- detect.py
+- detect.py:
 script to do inference for model on dataset
-- Adam.pt 
+- Adam.pt:
 model weights for configuration using Adam optimiser on mix_dataset
-- best_NTU.pt
+- best_NTU.pt:
 model weights after training on NTU dataset
-- mix50
+- mix50:
 model weights for configuration using SGD optimiser on mix_dataset
 
 ### Model/data
-- coco128_mix.yaml
+- coco128_mix.yaml:
 config file for data training where we will specify the path for the mix_data and the classes for object detection
-- coco128_aug.yaml
+- coco128_aug.yaml:
 config file for data training where we will specify the path for the mix_data with augmentation and the classes for object detection
-- coco128.yaml
+- coco128.yaml:
 config file for data training where we will specify the path for the split_dataset configuration and the classes for object detection
-- hyps/hyp.scratch.yaml
+- hyps/hyp.scratch.yaml:
 config file stating default initial hyperparameters values using SGD optimiser
-- hyps/hyp.test1.yaml
+- hyps/hyp.test1.yaml:
 config file stating default initial hyperparameters values using Adam optimiser
 
 ### Model/train
 python scripts for training model
-- all_train_freeze.py
+- all_train_freeze.py:
 script to train model that freezes weights in all layers except the final layer for transfer learning
-- backbone_train_freeze.py
+- backbone_train_freeze.py:
 script to train model that freezes weights in layers in model backbone for transfer learning
-- train.py
+- train.py:
 script that trains model finetuning all weights
 
