@@ -8,7 +8,7 @@ This script will split the video into frames and save them every 10 frames
 - preprocessing_utils.py:
 This script contains miscellaneous parts of codes that were used for different uses such as splitting the images into datasets and shifting of images into different folders
 
-## Training
+## Model
 This folder is containing scripts edited from Ultralytics repo and data generated from it. Run YOLOv5_Code_final.ipynb to see usages of the code repo like traning and evaluation on models.
 
 This read me includes the important parts of the repositary that we edited or is relevant
@@ -24,7 +24,7 @@ model weights after training on NTU dataset
 - mix50
 model weights for configuration using SGD optimiser on mix_dataset
 
-### Training/data
+### Model/data
 - coco128_mix.yaml
 config file for data training where we will specify the path for the mix_data and the classes for object detection
 - coco128_aug.yaml
@@ -36,7 +36,7 @@ config file stating default initial hyperparameters values using SGD optimiser
 - hyps/hyp.test1.yaml
 config file stating default initial hyperparameters values using Adam optimiser
 
-### Training/train
+### Model/train
 python scripts for training model
 - all_train_freeze.py
 script to train model that freezes weights in all layers except the final layer for transfer learning
