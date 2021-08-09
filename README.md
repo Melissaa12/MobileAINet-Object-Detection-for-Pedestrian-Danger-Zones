@@ -9,7 +9,7 @@ This script will split the video into frames and save them every 10 frames
 This script contains miscellaneous parts of codes that were used for different uses such as splitting the images into datasets and shifting of images into different folders
 
 ## Training
-This folder is containing scripts edited from Ultralytics repo and data generated from it
+This folder is containing scripts edited from Ultralytics repo and data generated from it. Run YOLOv5_Code_final.ipynb to see usages of the code repo like traning and evaluation on models.
 
 This read me includes the important parts of the repositary that we edited or is relevant
 
