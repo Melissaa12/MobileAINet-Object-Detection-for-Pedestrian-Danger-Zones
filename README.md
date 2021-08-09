@@ -31,6 +31,9 @@ script to train model that freezes weights in all layers except the final layer 
 script to train model that freezes weights in layers in model backbone for transfer learning
 - train.py:
 script that trains model finetuning all weights
+### Model/runs
+output and results from training and detecting, there is Adam_50 for example of output from training model.
+
 ### Model/data
 - coco128_mix.yaml:
 config file for data training where we will specify the path for the mix_data and the classes for object detection
