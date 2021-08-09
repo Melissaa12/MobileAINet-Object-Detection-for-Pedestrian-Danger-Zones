@@ -43,5 +43,5 @@ config file stating default initial hyperparameters values using SGD optimiser
 - hyps/hyp.test1.yaml:
 config file stating default initial hyperparameters values using Adam optimiser
 
-Note: Dataset is not provided, for example dataset can look at this link https://drive.google.com/drive/folders/1ZCeKRX5lIT3uJJV7YViME_I0zZd0nfwS?usp=sharing
+Note: Dataset is not provided in repo, for example dataset can look at this link https://drive.google.com/drive/folders/1ZCeKRX5lIT3uJJV7YViME_I0zZd0nfwS?usp=sharing for dataset with augmented images
 
