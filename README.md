@@ -24,6 +24,13 @@ model weights after training on NTU dataset
 - mix50:
 model weights for configuration using SGD optimiser on mix_dataset
 
+python scripts for training model
+- all_train_freeze.py:
+script to train model that freezes weights in all layers except the final layer for transfer learning
+- backbone_train_freeze.py:
+script to train model that freezes weights in layers in model backbone for transfer learning
+- train.py:
+script that trains model finetuning all weights
 ### Model/data
 - coco128_mix.yaml:
 config file for data training where we will specify the path for the mix_data and the classes for object detection
@@ -36,12 +43,5 @@ config file stating default initial hyperparameters values using SGD optimiser
 - hyps/hyp.test1.yaml:
 config file stating default initial hyperparameters values using Adam optimiser
 
-### Model/train
-python scripts for training model
-- all_train_freeze.py:
-script to train model that freezes weights in all layers except the final layer for transfer learning
-- backbone_train_freeze.py:
-script to train model that freezes weights in layers in model backbone for transfer learning
-- train.py:
-script that trains model finetuning all weights
+
 
