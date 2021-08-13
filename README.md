@@ -11,7 +11,7 @@ This script contains miscellaneous parts of codes that were used for different u
 This notebook contains the scripts for augmentation (noising, blurring and rotation)
 
 ## Model
-This folder is containing scripts edited from Ultralytics repo and data generated from it. Run YOLOv5_Code_final.ipynb to see usages of the code repo like traning and evaluation on models.
+This is for the model training of the YOLOv5 model. This folder contains scripts edited from Ultralytics repo and data generated from it. Run YOLOv5_Code_final.ipynb to see usages of the code repo like traning and evaluation on models.
 
 This read me includes the important parts of the repository that we edited or is relevant
 
